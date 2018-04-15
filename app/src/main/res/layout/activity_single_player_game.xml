@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context="com.elixirprimehouse.tictactoe.SinglePlayerGameActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:background="@drawable/singlebackground">
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/default_player_turn_text"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="-5dp">
+
+                <Button
+                    android:id="@+id/res"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/restart_game"
+                    android:onClick="startNewGame"
+                    android:background="@drawable/restartgame"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:padding="4dp" />
+
+                <Button
+                    android:id="@+id/restart_game"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/reset_board"
+                    android:onClick="resetBoard"
+                    android:background="@drawable/resetboard"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="5dp"
+                    android:padding="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/a01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textColor="@color/boardTextColor"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/a02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+
+            <Button
+                android:id="@+id/a07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:onClick="playGame"
+                android:textSize="70sp"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textSize="70sp"
+                android:textAlignment="center"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+            <Button
+                android:id="@+id/a09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_text"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playGame"
+                android:background="@drawable/singlebackground"
+                android:layout_margin="4dp"
+                android:textColor="@color/boardTextColor"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

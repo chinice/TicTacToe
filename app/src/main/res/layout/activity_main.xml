@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elixirprimehouse.tictactoe.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background_description"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/single_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/mainButtonTextColor"
+            android:background="@drawable/draw"
+            android:text="@string/single_player"/>
+
+        <Button
+            android:id="@+id/multi_player"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/single_player"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainButtonTextColor"
+            android:textSize="20sp"
+            android:background="@drawable/draw"
+            android:text="@string/multi_player" />
+
+    </LinearLayout>
+
+</RelativeLayout>

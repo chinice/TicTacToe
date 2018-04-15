@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    tools:context="com.elixirprimehouse.tictactoe.MultiPlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/singlebackground"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="160dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/multi_player"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"/>
+
+
+            <EditText
+                android:id="@+id/player1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/mainButtonTextColor"
+                android:hint="@string/player1_name"
+                android:textColorHint="@color/textColorHint"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/player2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoCorrect"
+                android:textColor="@color/mainButtonTextColor"
+                android:hint="@string/player2_name"
+                android:textColorHint="@color/textColorHint"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/draw"
+                android:layout_gravity="center"
+                android:text="@string/submit_button"
+                android:textColor="@color/mainButtonTextColor"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="startGame"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="400dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/logo_description"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_1"/>
+
+    </RelativeLayout>
+</ScrollView>
