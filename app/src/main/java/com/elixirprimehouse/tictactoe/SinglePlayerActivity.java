@@ -32,8 +32,8 @@ public class SinglePlayerActivity extends AppCompatActivity {
         //check if the Player enters a name
         if(player1NameText.equals("")){
             //If not, use the default name
-            player1NameText="Human Player";
-            player1NameBox.setText("Human Player");
+            player1NameText="Player 1";
+            player1NameBox.setText("Player 1");
         }
 
         Intent singlePlayerGameIntent = new Intent(SinglePlayerActivity.this, SinglePlayerGameActivity.class);
