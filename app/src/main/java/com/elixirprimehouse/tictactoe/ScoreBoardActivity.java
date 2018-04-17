@@ -44,8 +44,8 @@ public class ScoreBoardActivity extends AppCompatActivity {
             player1Result.setTextColor(Color.GREEN);
             player2Result.setTextColor(Color.RED);
 
-            player1Result.setText("Winner");
-            player2Result.setText("Loser");
+            player1Result.setText("Win");
+            player2Result.setText("Lose");
 
             drawsView.setText(player1Name);
 
@@ -54,8 +54,8 @@ public class ScoreBoardActivity extends AppCompatActivity {
             player2Result.setTextColor(Color.GREEN);
             player1Result.setTextColor(Color.RED);
 
-            player1Result.setText("Loser");
-            player2Result.setText("Winner");
+            player1Result.setText("Lost");
+            player2Result.setText("Won");
 
             drawsView.setText(player2Name);
 
